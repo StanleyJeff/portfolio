@@ -52,3 +52,13 @@
    .menu li {
     padding: 5px 14px;
    }
+
+/* CONTENT PAGE STYLE */
+.title-box {
+     text-align: center;
+     padding: 20px;
+     margin: auto;
+     color: white;
+     width: 50%;
+     margin-top: 15%;
+    }
