@@ -7,6 +7,7 @@
    }
    body {
     background-color: #212529;
+    align-items: center;
    }
    a {
     text-decoration: none;
@@ -14,6 +15,25 @@
    li {
     list-style: none;
    }
+
+/* SUBTITLE */
+#sname {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: rgba(1,1,1,0.7);
+}
+
+#sname h1 {
+    font-weight: bold;
+    font-size: 3.5em;
+    transition: all 500ms;
+}
+    
+#sname h1:hover {
+    font-size: 88px;
+    font-size-adjust: 1px;
+    color: yellow;
+}
 
 /* NAVBAR STYLING STARTS */
 .navbar {
@@ -35,6 +55,8 @@
    /* LOGO */
    .logo {
     font-size: 32px;
+    color: white;
+    margin-left: 1%;
    }
 
    /* NAVBAR MENU */
@@ -56,9 +78,28 @@
 /* CONTENT PAGE STYLE */
 .title-box {
      text-align: center;
-     padding: 20px;
+     padding: 0px;
      margin: auto;
      color: white;
-     width: 50%;
-     margin-top: 15%;
+     width: 65%;
+     margin-top: 12%;
+     font-size: 36px;
     }
+
+.subtitle-box {
+    text-align: center;
+    padding: 0px;
+    margin: auto;
+    color: white;
+    width: 60%;
+    font-size: 18px;
+    }
+
+.socials-box {
+    text-align: center;
+    position: absolute;
+    width: 30%;
+    left: 35;
+    bottom: 0%;
+    }
+
