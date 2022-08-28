@@ -6,7 +6,7 @@
     font-family: sans-serif;
    }
    body {
-    background-color: #212529;
+    background-color: #30363c;
     align-items: center;
    }
    a {
@@ -24,7 +24,7 @@
 #sname {
     margin-top: 100px;
     margin-bottom: 100px;
-    color: rgba(1,1,1,0.7);
+    color: rgba(0,0,0,0.9);
 }
 
 #sname h1 {
@@ -92,7 +92,24 @@
 
 .subtitle-box {
     text-align: center;
-    padding: 0px;
+    padding: 30px;
+    margin: auto;
+    color: white;
+    width: 60%;
+    font-size: 18px;
+    }
+
+  .subtitle-box a {
+    color: rgba(0,0,0,0.9);
+  }
+
+  .subtitle-box a:hover {
+    color: yellow;
+  }
+
+  .subtitle-text-box {
+    text-align: center;
+    padding: 25px;
     margin: auto;
     color: white;
     width: 60%;
@@ -101,16 +118,17 @@
 
 .socials-box {
     text-align: center;
-    position: absolute;
+    position: absolute; 
     width: 30%;
     left: 35%;
-    bottom: 3%;
-    padding: 5px;
+    bottom: 1%;
+    align-items: center;
     }
 
 .socials-box a {
     color: white;
     font-size: 24px;
+    text-align: center;
     }
 
 .socials-box a:hover {
@@ -136,15 +154,41 @@
     font-size: 18px;
     }
 
+.main-text-area {
+  width: 50%;
+  margin-top: 2%;
+  margin-left: 25%;
+  padding: 10px;
+  font-size: 22px;
+  color: white;
+}
+
+.text-box-left {
+  position: absolute;
+  width: 30%;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.pic-box-right {
+  position: absolute;
+  width: 25%;
+  margin-left: 30%;
+  margin-top: 20px;
+  padding: 10px; 
+}
+
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 260px;
+}
+
 /* TIMELINE CSS*/
 ul {
     list-style: none;
     margin: 0 !important;
-  }
-  
-  a {
-    text-decoration: none !important;
-    display: inline-block;
   }
   
   img {
@@ -155,20 +199,6 @@ ul {
     outline: none;
   }
   
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: ;
-    margin: 0;
-  }
-  p {
-    font-size: 14px;
-    line-height: 26px;
-    margin: 0;
-  }
   .container {
     width: 100%;
     max-width: 1140px;
@@ -188,16 +218,10 @@ ul {
     align-items: center;
   }
   .timeline-area {
-    padding: 80px 0;
+    padding: 50px 0;
   }
   .all-timelines {
     position: relative;
-  }
-  .timelines h2 {
-    text-align: center;
-    color: #fff;
-    font-weight: 600;
-    margin-bottom: 40px;
   }
   .all-timelines::before {
     content: "";
@@ -218,7 +242,7 @@ ul {
   }
   .timeline-text {
     width: 50%;
-    padding-left: 30px;
+    padding-left: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     position: relative;
@@ -260,7 +284,48 @@ ul {
     padding-right: 30px;
     text-align: right;
   }
+
+  /* WORD CLOUD CSS */
+  ul.cloud {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    line-height: 2.5rem;
+    padding-top: 10px;
+  }
+
+  ul.cloud a {
+    color: yellow;
+    display: block;
+    font-size: 1.5rem;
+    padding: 0.125rem 0.25rem;
+    text-decoration: none;
+    position: relative;
+    --size: attr(data-weight number, 2); 
+    font-size: calc(var(--size) * 1rem);
+  }
+
+  ul.cloud a[data-weight="1"] { --size: 1; }
+  ul.cloud a[data-weight="2"] { --size: 2; }
+  ul.cloud a[data-weight="3"] { --size: 3; }
+  ul.cloud a[data-weight="4"] { --size: 4; }
+  ul.cloud a[data-weight="5"] { --size: 5; }
+  ul.cloud a[data-weight="6"] { --size: 6; }
+  ul.cloud a[data-weight="7"] { --size: 7; }
+  ul.cloud a[data-weight="8"] { --size: 8; }
+  ul.cloud a[data-weight="9"] { --size: 9; }
+
+  ul.cloud a {
+    --size: 4;
+    font-size: calc(var(--size) * 0.25rem + 0.5rem);
+  }
   
+
+
+  /* RESPONSIVENESS CSS */
   @media all and (max-width: 991px) {
   }
   @media all and (max-width: 768px) {
